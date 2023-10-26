@@ -9,6 +9,7 @@ public class TestController {
     
     @GetMapping("/getSquaredValue/{valueToSquare}")
     long getSquaredValue(@PathVariable("valueToSquare") Long valueToSquare) {
+        System.out.println("Hello world");
         return valueToSquare*valueToSquare;
     }
 }
